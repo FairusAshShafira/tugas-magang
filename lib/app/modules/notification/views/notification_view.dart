@@ -14,15 +14,13 @@ class NotificationView extends GetView<NotificationController> {
   Widget build(BuildContext context) {
     final User? user = FirebaseAuth.instance.currentUser;
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('NotificationView'),
-        centerTitle: true,
-      ),
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Image.asset("../assets/verifikasi.png"),
+            SizedBox(height: 20,),
             user != null
                 ? Column(
                     mainAxisAlignment: MainAxisAlignment.center,

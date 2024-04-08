@@ -12,6 +12,8 @@ abstract class Routes {
   static const QUERY = _Paths.QUERY;
   static const NOTIFICATION = _Paths.NOTIFICATION;
   static const HOME_PAGE = _Paths.HOME_PAGE;
+  static const HOME_PAGE_ADMIN = _Paths.HOME_PAGE_ADMIN;
+  static const ADMIN_PAGE = _Paths.ADMIN_PAGE;
 }
 
 abstract class _Paths {
@@ -25,4 +27,6 @@ abstract class _Paths {
   static const QUERY = '/query';
   static const NOTIFICATION = '/notification';
   static const HOME_PAGE = '/home-page';
+  static const HOME_PAGE_ADMIN = '/home-page-admin';
+  static const ADMIN_PAGE = '/admin-page';
 }

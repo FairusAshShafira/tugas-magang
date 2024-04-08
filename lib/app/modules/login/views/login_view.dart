@@ -85,10 +85,6 @@ class _LoginViewState extends State<LoginView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('LoginView'),
-        centerTitle: true,
-      ),
       body: Padding(
         padding: const EdgeInsets.all(25),
         child: Container(
@@ -97,6 +93,9 @@ class _LoginViewState extends State<LoginView> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              // SizedBox(height: 50,),
+              Image.asset("../assets/logo.png"),
+              SizedBox(height: 20,),
               Container(
                 height: 400,
                 width: 400,

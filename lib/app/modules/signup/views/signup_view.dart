@@ -73,10 +73,6 @@ class _SignupViewState extends State<SignupView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('SignupView'),
-        centerTitle: true,
-      ),
       body: Padding(
         padding: const EdgeInsets.all(25),
         child: Container(
@@ -85,6 +81,8 @@ class _SignupViewState extends State<SignupView> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              Image.asset("../assets/logo.png"),
+              SizedBox(height: 20,),
               Container(
                 height: 400,
                 width: 400,

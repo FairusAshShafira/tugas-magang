@@ -2,6 +2,8 @@ import 'package:get/get.dart';
 
 import '../modules/add_data/bindings/add_data_binding.dart';
 import '../modules/add_data/views/add_data_view.dart';
+import '../modules/admin_page/bindings/admin_page_binding.dart';
+import '../modules/admin_page/views/admin_page_view.dart';
 import '../modules/edit_data/bindings/edit_data_binding.dart';
 import '../modules/edit_data/views/edit_data_view.dart';
 import '../modules/home/bindings/home_binding.dart';
@@ -71,6 +73,11 @@ class AppPages {
       name: _Paths.HOME_PAGE,
       page: () => HomePageView(),
       binding: HomePageBinding(),
+    ),
+    GetPage(
+      name: _Paths.ADMIN_PAGE,
+      page: () => AdminPageView(),
+      binding: AdminPageBinding(),
     ),
   ];
 }

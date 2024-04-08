@@ -83,6 +83,18 @@ class HomeView extends GetView<HomeController> {
                   ),
               ),
 
+          //DISINI YAA
+          InkWell(
+            onTap: () {
+              // Merutekan ke halaman Home
+              Get.toNamed(Routes.HOME_PAGE);
+            },
+            child: Icon(
+              Icons.home,
+            ),
+          ),
+
+          
           // Syntax untuk menampilkan data Firestore menggunakan StreamBuilder
           Expanded(
             child: StreamBuilder<QuerySnapshot<Object?>>(
